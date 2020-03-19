@@ -1,0 +1,216 @@
+[
+  {
+    "Id": 100,
+    "TranslationLabel": "Samples",
+    "Route": "",
+    "Icon": "icon-Storage",
+    "Children": [
+      {
+        "Id": 101,
+        "TranslationLabel": "Controls",
+        "Route": "styles/style-guide",
+        "Icon": "icon-Graph",
+        "Children": null
+      },
+      {
+        "Id": 102,
+        "TranslationLabel": "Components",
+        "Route": "styles/components",
+        "Icon": "icon-Graph",
+        "Children": null
+      },
+      {
+        "Id": 103,
+        "TranslationLabel": "Grid",
+        "Route": "styles/grid-basic",
+        "Icon": "icon-con",
+        "Children": null
+      },
+      {
+        "Id": 104,
+        "TranslationLabel": "Grid-Col-Chooser",
+        "Route": "styles/grid-col-chooser",
+        "Icon": "icon-con",
+        "Children": null
+      },
+      {
+        "Id": 105,
+        "TranslationLabel": "Grid-Row-Details",
+        "Route": "styles/grid-row-details",
+        "Icon": "icon-con",
+        "Children": null
+      },
+      {
+        "Id": 106,
+        "TranslationLabel": "SliderForm",
+        "Route": "styles/slider-form",
+        "Icon": "icon-Dispose",
+        "Children": null
+      },
+      {
+        "Id": 107,
+        "TranslationLabel": "Notifications",
+        "Route": "styles/notifications",
+        "Icon": "icon-Dispose",
+        "Children": null
+      }
+    ]
+  },
+  {
+    "Id": 200,
+    "TranslationLabel": "Configuration",
+    "Route": "",
+    "Icon": "icon-Storage",
+    "Children": [
+      {
+        "Id": 201,
+        "TranslationLabel": "Menu Item 1",
+        "Route": "admin/launcher",
+        "Icon": "icon-con",
+        "Children": null
+      },
+      {
+        "Id": 202,
+        "TranslationLabel": "Menu Item 2",
+        "Route": "tools/labsite-group",
+        "Icon": "icon-Graph",
+        "Children": null
+      },
+      {
+        "Id": 203,
+        "TranslationLabel": "Menu Item 3",
+        "Route": "admin/launcher",
+        "Icon": "icon-Graph",
+        "Children": null
+      },
+      {
+        "Id": 204,
+        "TranslationLabel": "Menu Item 4",
+        "Route": "admin/launcher",
+        "Icon": "icon-Dispose",
+        "Children": null
+      },
+      {
+        "Id": 205,
+        "TranslationLabel": "Menu Item  5",
+        "Route": "admin/launcher",
+        "Icon": "icon-ChangeDate",
+        "Children": null
+      },
+      {
+        "Id": 206,
+        "TranslationLabel": "Menu Item  6",
+        "Route": "admin/launcher",
+        "Icon": "icon-SampleReg",
+        "Children": null
+      }
+    ]
+  },
+  {
+    "Id": 300,
+    "TranslationLabel": "Operations",
+    "Route": "",
+    "Icon": "icon-con",
+    "Children": [
+      {
+        "Id": 301,
+        "TranslationLabel": "Move",
+        "Route": "admin/launcher",
+        "Icon": "icon-SampleReg",
+        "Children": null
+      },
+      {
+        "Id": 302,
+        "TranslationLabel": "Reservation",
+        "Route": "admin/launcher",
+        "Icon": "icon-Graph",
+        "Children": null
+      },
+      {
+        "Id": 303,
+        "TranslationLabel": "LabRequest",
+        "Route": "admin/launcher",
+        "Icon": "icon-con",
+        "Children": null
+      },
+      {
+        "Id": 304,
+        "TranslationLabel": "Inventory",
+        "Route": "admin/launcher",
+        "Icon": "icon-dustbin",
+        "Children": null
+      },
+      {
+        "Id": 305,
+        "TranslationLabel": "ModifyDates",
+        "Route": "admin/launcher",
+        "Icon": "icon-ChangeDate",
+        "Children": null
+      },
+      {
+        "Id": 306,
+        "TranslationLabel": "StorageElement",
+        "Route": "admin/launcher",
+        "Icon": "icon-Add",
+        "Children": null
+      }
+    ]
+  },
+  {
+    "Id": 400,
+    "TranslationLabel": "Reporting",
+    "Route": "",
+    "Icon": "icon-SampleReg",
+    "Children": [
+      {
+        "Id": 401,
+        "TranslationLabel": "StorageOverview",
+        "Route": "admin/launcher",
+        "Icon": "icon-tick-checkbox",
+        "Children": null
+      },
+      {
+        "Id": 402,
+        "TranslationLabel": "St Solution",
+        "Route": "admin/launcher",
+        "Icon": "icon-Add",
+        "Children": null
+      },
+      {
+        "Id": 403,
+        "TranslationLabel": "Disposal",
+        "Route": "admin/launcher",
+        "Icon": "icon-Graph",
+        "Children": null
+      },
+      {
+        "Id": 404,
+        "TranslationLabel": "Iter",
+        "Route": "admin/launcher",
+        "Icon": "icon-dustbin",
+        "Children": null
+      },
+      {
+        "Id": 405,
+        "TranslationLabel": "Tracking",
+        "Route": "admin/launcher",
+        "Icon": "icon-Storage",
+        "Children": null
+      },
+      {
+        "Id": 406,
+        "TranslationLabel": "InAndOut",
+        "Route": "admin/launcher",
+        "Icon": "icon-SampleReg",
+        "Children": null
+      },
+      {
+        "Id": 407,
+        "TranslationLabel": "ApprovalManagement",
+        "Route": "admin/launcher",
+        "Icon": "icon-ChangeDate",
+        "Children": null
+      }
+    ]
+  }
+]

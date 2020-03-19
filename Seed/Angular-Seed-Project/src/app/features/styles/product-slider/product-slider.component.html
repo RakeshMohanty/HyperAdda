@@ -1,0 +1,34 @@
+<div style="padding: 50px">
+<div style="position: absolute"><h5>Add new Product</h5></div>
+<div class="pull-right"><button mat-button color="accent" (click)="dismiss()">Close</button></div>
+<div style="padding: 40px">
+  <div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Product Title" [formControl]="title"  required>
+      <mat-error *ngIf="title.invalid">{{getErrorMessageFirstName('Product Title')}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Product Category" [formControl]="item1" required>
+      <mat-error *ngIf="item1.invalid">{{getErrorMessageLastName('Product Category')}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Item2" [(ngModel)]="product.Item2">
+    </mat-form-field>
+
+
+    <mat-form-field>
+        <input matInput placeholder="Item3" [(ngModel)]="product.Item3">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Item4" [(ngModel)]="product.Item4">
+      </mat-form-field>
+  </div>
+<div style="text-align: center; margin-top: 55px">
+  <button mat-raised-button color="primary" style="width: 200px" (click)="save()">Save</button>
+  <button mat-button color="primary" style="width: 200px" (click)="dismiss()">Cancel</button>
+</div>
+</div>
+</div>

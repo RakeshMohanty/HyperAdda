@@ -1,0 +1,57 @@
+@import "./src/styles/global/base/color";
+
+$iconWidth: 36px;
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.sidenav-toggle-old {
+  display: none;
+  padding: 0;
+  margin: 8px;
+  min-width: $iconWidth;
+
+  @media (max-width: 2000px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  mat-icon {
+    font-size: 30px;
+    height: $iconWidth;
+    width: $iconWidth;
+    line-height: $iconWidth;
+    color: white;
+  }
+}
+
+
+.sidenav-toggle {
+  display: flex;
+  padding: 0;
+  margin: 8px;
+  align-items: center;
+  justify-content: center;
+  min-width: $iconWidth;
+  mat-icon {
+    font-size: 30px;
+    height: $iconWidth;
+    width: $iconWidth;
+    line-height: $iconWidth;
+    color: white;
+  }
+}
+
+
+.tooltip-host {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 30px;
+}
+
+
+
+

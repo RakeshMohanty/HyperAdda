@@ -1,0 +1,56 @@
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-tick-checkbox:before {
+  content: "\e900";
+}
+.icon-Add:before {
+  content: "\e901";
+}
+.icon-dustbin:before {
+  content: "\e902";
+}
+.icon-Down-arrow:before {
+  content: "\e903";
+}
+.icon-Up-Arrow:before {
+  content: "\e904";
+}
+.icon-UpArrow:before {
+  content: "\e905";
+}
+.icon-UpArrow2:before {
+  content: "\e906";
+}
+.icon-Storage:before {
+  content: "\e907";
+}
+.icon-SampleReg:before {
+  content: "\e908";
+}
+.icon-ChangeDate:before {
+  content: "\e909";
+}
+.icon-Graph:before {
+  content: "\e90a";
+}
+.icon-Dispose:before {
+  content: "\e90b";
+}
+.icon-con:before {
+  content: "\e90c";
+}

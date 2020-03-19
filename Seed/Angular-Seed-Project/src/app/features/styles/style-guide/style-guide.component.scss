@@ -1,0 +1,73 @@
+@import "./src/styles/global/base/variables";
+@import "./src/styles/global/base/color";
+
+.mat-card {
+  padding: 5px;
+  color:$base-color-white;
+}
+
+.bg1 {
+  background-color: $primary-color-dark;
+}
+.bg2 {
+  background-color: $primary-color-light;
+}
+.bg3 {
+  background-color: $secondary-color-dark;
+}
+.bg4 {
+  background-color: $secondary-color-light;
+}
+
+.bg5 {
+  background-color: $grey-shade-dark;
+}
+.bg6 {
+  background-color: $grey-shade-medium;
+}
+.bg7 {
+  background-color: $grey-shade-light;
+}
+
+.bg8 {
+  background-color: $error-color;
+}
+.bg9 {
+  background-color: $success-color;
+}
+.bg10 {
+  background-color: $warning-color;
+}
+.bg11 {
+  background-color: $link-color;
+}
+
+
+.font-light{
+  font-family:$font-light;
+  p { color: $primary-color-dark;
+      font-family:$font-light;
+    }
+}
+
+.font-regular{
+ font-family:$font-regular;
+  p { color: $primary-color-dark;
+      font-family:$font-regular;
+    }
+}
+
+.font-medium{
+  font-family:$font-medium;
+  p { color: $primary-color-dark;
+      font-family:$font-medium;
+    }
+}
+
+.font-semi-bold {
+  font-family:$font-semi-bold;
+  p { color: $primary-color-dark;
+      font-family:$font-semi-bold;
+    }
+}
+

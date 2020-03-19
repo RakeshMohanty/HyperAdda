@@ -1,0 +1,23 @@
+{
+  "Name": "Common.Application.Name",
+  "Languages": [
+      {
+          "Name": "en",
+          "Icon": "en.png"
+      },
+      {
+          "Name": "fr",
+          "Icon": "fr.png"
+      },
+      {
+          "Name": "es",
+          "Icon": "es.png"
+      },
+      {
+          "Name": "nl",
+          "Icon": "nl.png"
+      }
+  ],
+  "Version": "1.2.3.4",
+  "LastReleaseDate": "May 20, 2018"
+}

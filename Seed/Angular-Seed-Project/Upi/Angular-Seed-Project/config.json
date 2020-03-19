@@ -1,0 +1,28 @@
+{
+  "applicationServiceUrl": "__ConfigKeyapplicationServiceUrl__",
+  "environmentName": "__ConfigKeyEnvironmentName__",
+  "version": "__ConfigKeyVersionName__",
+  "i18n-fr": "__FrUrl__",
+  "i18n-en": "__EnUrl__",
+  "i18n-es": "__EsUrl__",
+  "i18n-nl": "__NlUrl__",
+  "logger-config" :
+      [
+          {
+            "loggerName": "console",
+            "loggerLocation" : "console",
+            "isActive" : true
+          },
+          {
+            "loggerName": "localstorage",
+            "loggerLocation" : "logging",
+            "isActive" : true
+          },
+          {
+            "loggerName": "webapi",
+            "loggerLocation" : "__LogWebApiUrl__",
+            "isActive" : true
+          }
+        ]
+}
+

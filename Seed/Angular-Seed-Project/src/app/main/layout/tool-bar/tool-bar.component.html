@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" style="height:50px">
+  <button class="sidenav-toggle" *ngIf="dispalyToggleButton" mat-button (click)="toggleSidenav.emit()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div *ngIf="showLogo" style="margin-left: 10px;border-color: white;border-right-style: inset;border-width: thin;line-height:10px">
+  <a style="display: inline-block; margin-right: 25px;margin-left: 25px">
+  <object style="pointer-events: none;vertical-align: middle" data="assets/images/en.png" type="image/svg+xml" height="25">
+    <!-- <img src="assets/images/logo.jpg" /> -->
+  </object>
+</a>
+</div>
+
+  <div style="margin-left: 25px"  id="app-name" i18n="@@Common.Application.Name"> Rakesh Solution(en) </div>
+  <div *ngIf="errorMessage"> {{ errorMessage }} </div>
+  <span class="flex-spacer"></span>
+  <mat-divider [vertical]="true"></mat-divider>
+  <button *ngIf="userid" mat-button [matMenuTriggerFor]="languageMenu">
+      <img height="13" width="22" style="margin-right:5px" src="assets/images/{{selectedLanguage?.Icon}}"> {{ selectedLanguage?.Name.toUpperCase() }}
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </button>
+  <mat-menu #languageMenu="matMenu" [overlapTrigger]="false">
+      <button *ngFor="let language of appInfo?.Languages"
+              mat-menu-item (click)="onLanguageMenuClick(language)">
+          <img height="13" width="22" style="margin-right:5px" src="assets/images/{{language?.Icon}}"> {{ language?.Name.toUpperCase() }}
+    </button>
+  </mat-menu>
+  <mat-divider [vertical]="true"></mat-divider>
+
+  <button *ngIf="userid" mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>account_circle</mat-icon> {{ userid?.toUpperCase() }}
+  </button>
+
+  <mat-divider [vertical]="true" style="margin-left: 20px"></mat-divider>
+  <mat-menu #menu="matMenu" [overlapTrigger]="false">
+    <button *ngIf="user" mat-menu-item>{{user?.FirstName}} {{user?.MiddleName}} {{user?.LastName}}</button>
+    <button *ngIf="user" mat-menu-item>{{user?.EmailId?.toLowerCase()}}</button>
+    <mat-divider [vertical]="false"></mat-divider>
+    <button *ngIf="user" mat-menu-item>Role: {{user?.Role}}</button>
+  </mat-menu>
+</mat-toolbar>

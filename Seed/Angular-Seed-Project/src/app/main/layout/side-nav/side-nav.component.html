@@ -1,0 +1,85 @@
+<mat-sidenav-container class="app-sidenav-container"
+                      [class.dark-theme]="isDarkTheme" [dir]="dir" (backdropClick)="onBackdropClick()">
+  <mat-sidenav #sidenav1 class="mat-elevation-z10 side-nav-bg"
+               [mode]="menuMode"
+               [style.width.px]="menuWidth"
+               (mouseover)="onMenuMouseover()"
+               (mouseleave)="onMenuMouseleave()">
+    <mat-toolbar color="primary" fxLayout="row">
+
+            <button mat-icon-button *ngIf="displayStickyMenu">
+                <mat-icon>menu</mat-icon>
+            </button>
+
+        <div style="margin-left: 10px;margin-top: 8px">
+            <a style="display: inline-block;" (click)="onLogoClick()" *ngIf="!displayStickyMenu" [routerLink]="">
+        <object style="pointer-events: none;" data="assets/images/en.png" type="image/svg+xml" height="25">
+          <img src="assets/images/logo.jpg" />
+        </object>
+      </a>
+      </div>
+
+    <span class="flex-spacer"></span>
+    <div *ngIf="!displayStickyMenu" class="sticky-toolbar">
+      <button mat-icon-button (click)="toggleStickyMenu()">
+          <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    </mat-toolbar>
+
+    <div *ngIf="displayStickyMenu">
+        <div *ngFor="let menu of navNodes" class="sticky-menu-border">
+          <div class="sticky-menu-text" [class.selected-sticky-menu]="menu.Id == selectedPMenuId">
+            <span>
+                <span style="font-size: 22px;line-height: 50px;"  class="{{menu.Icon}}"></span>
+            </span>
+          </div>
+        </div>
+    </div>
+
+    <mat-nav-list *ngIf="!displayStickyMenu">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel *ngFor="let menu of navNodes" class="side-nav" [expanded]="menu.Expand">
+          <mat-expansion-panel-header>
+            <mat-panel-title [class.selected-menu]="menu.Id == selectedPMenuId" class="mat-panel-color">
+              <span style="vertical-align:bottom; font-size: 22px;width: 30px; text-align: center" class="{{menu.Icon}}"></span>
+              <div style="margin-top: -1px; margin-left:10px;">{{ menu.TranslationLabel | translate }}</div>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-list-item class="mat-list-item-word-wrap" [class.selected-submenu]="submenu.Id == selectedMenuId" *ngFor="let submenu of menu.Children">
+            <a matLine (click)="onSubmenuClick(submenu, menu)" [class.selected-menu]="submenu.Id == selectedMenuId"  style="margin-top: 10px; margin-bottom:10px;">
+              <span class="{{submenu.Icon}}"></span>
+              <span> {{ submenu.TranslationLabel | translate  }}</span>
+            </a>
+         </mat-list-item>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-nav-list>
+ </mat-sidenav>
+
+ <mat-sidenav #sidenav2 (keydown.escape)="onEscape('escape')"
+ [style.width.px]="formWidth"
+ class="mat-elevation-z10" [position]="'end'"
+ [disableClose]="false" [autoFocus]="false"
+  [mode]="formMode">
+ <div class="app-sidenav-content">
+  <ng-template #dynamic></ng-template>
+ </div>
+</mat-sidenav>
+
+  <div class="side-nav-content" [style.margin-left.px]="leftMargin">
+    <app-tool-bar (toggleTheme)="toggleTheme()"
+                 (toggleSidenav)="sidenav.toggle()"
+                 (toggleDir)="toggleDir()" [dispalyToggleButton]="dispalyToggleButton">
+    </app-tool-bar>
+    <app-app-launcher *ngIf = "displayTiles" [navNodes]="navNodes"
+                      (launcherOptionClicked) = "onLauncherClicked($event)"></app-app-launcher>
+    <div style="margin: 10px;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <button *ngIf="isFormOnHold" (click)="onHoldForm()" color="warn" class="form-on-hold-icon"  mat-mini-fab>
+      <mat-icon>fast_rewind</mat-icon>
+  </button>
+</mat-sidenav-container>

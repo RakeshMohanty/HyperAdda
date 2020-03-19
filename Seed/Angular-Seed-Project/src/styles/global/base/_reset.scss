@@ -1,0 +1,78 @@
+/**********************************************************/
+/*    Buttons
+/*****************************************************************/
+
+
+html *
+{
+   font-family: $font-light;
+   font-size: $font-size-root;
+}
+
+body {
+  overflow-y: visible !important;
+  padding-right: 0 !important;
+  color: $grey-shade-dark;
+  margin:0;
+  padding:0;
+}
+
+
+h1 {
+  display: block;
+  font-family: $font-light;
+  color: $grey-shade-dark;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+h2 {
+  display: block;
+  font-family: $font-light;
+  color: $grey-shade-dark;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+h3 {
+  display: block;
+  font-family: $font-regular;
+  color: $grey-shade-dark;
+  font-size: 26px;
+  line-height: 45px;
+}
+
+h4 {
+  display: block;
+  font-family: $font-medium;
+  color: $grey-shade-dark;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+h5 {
+  display: block;
+  font-family: $font-regular;
+  color: $grey-shade-dark;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+h6 {
+  display: block;
+  font-family: $font-semi-bold;
+  color: $grey-shade-dark;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+
+a {
+  color: $link-color;
+  font-family: $font-light;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:none;
+}

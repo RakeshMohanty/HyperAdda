@@ -1,0 +1,20 @@
+<div class="pull-right">
+    <button mat-icon-button color="accent" (click)="dismiss()">
+        <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div style="margin: 10px">
+
+<h5 style="text-align: center; margin-bottom: 10px" >Are you Sure?</h5>
+
+<div style="text-align: center; margin: 0px 10px 40px 10px; white-space: pre-wrap;">
+ {{data}}
+</div>
+
+
+<div style="text-align: center;">
+<button style="width: 200px; margin-right:20px" (click)="dismiss()" mat-raised-button color="primary">Oops! No Cancel</button>
+<button mat-button color="primary" (click)="confirmed()">Yes, I want to Delete</button>
+</div>
+</div>

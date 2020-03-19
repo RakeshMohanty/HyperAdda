@@ -1,0 +1,18 @@
+{
+  "Common": {
+    "Application": {
+      "Name": "Rakesh Solution - FR"
+    },
+    "Menu": {}
+  },
+  "Menu": {
+      "SideNav": {
+        "NavNodeContent": "Content",
+        "NavNodeLabsiteGroup": "Labsite Group",
+        "NavNodeTools": "Tools"
+      }
+  },
+  "Ngei": {
+
+  }
+}

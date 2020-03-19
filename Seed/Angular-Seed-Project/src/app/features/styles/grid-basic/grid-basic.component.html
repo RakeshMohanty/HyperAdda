@@ -1,0 +1,98 @@
+<div>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h4>Table UI</h4>
+      </mat-card-title>
+      <mat-card-subtitle>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+
+<div class="f-mat-table-header">
+  <div>
+      <button mat-button color="accent" routerLink="." (click)="add()">ADD</button>
+      <button mat-button [disabled]="this.selection.selected.length !== 1" color="accent" routerLink="." (click)=" deleteAll()">REMOVE</button>
+  </div>
+   <div class="f-right">
+      <button mat-button [disabled]="! this.selection.hasValue()" color="accent" routerLink="." (click)=" deleteAll()">  <span class="icon-dustbin"></span></button>
+  </div>
+
+</div>
+      <mat-table #table [dataSource]="dataSource" matSort>
+          <ng-container matColumnDef="select">
+              <mat-header-cell *matHeaderCellDef>
+                <mat-checkbox  (change)="$event ? masterToggle() : null"
+                              [checked]="selection.hasValue() && isAllSelected()"
+                              [indeterminate]="selection.hasValue() && !isAllSelected()">
+                </mat-checkbox>
+              </mat-header-cell>
+              <mat-cell *matCellDef="let row">
+                <mat-checkbox (click)="$event.stopPropagation()"
+                              (change)="$event ? selection.toggle(row) : null"
+                              [checked]="selection.isSelected(row)">
+                </mat-checkbox>
+              </mat-cell>
+            </ng-container>
+        <ng-container matColumnDef="Pid">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Id </mat-header-cell>
+          <mat-cell *matCellDef="let product"> {{product.Pid}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Title">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Title </mat-header-cell>
+          <mat-cell *matCellDef="let product"> {{product.Title}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Item1">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Item1 </mat-header-cell>
+          <mat-cell *matCellDef="let product"> {{product.Item1}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Item2">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Item2 </mat-header-cell>
+          <mat-cell *matCellDef="let product"> {{product.Item2}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Item3">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Item3 </mat-header-cell>
+          <mat-cell *matCellDef="let product"> {{product.Item3}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Item4">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Item4 </mat-header-cell>
+          <mat-cell *matCellDef="let product"> {{product.Item4}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Item5">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Item5 </mat-header-cell>
+          <mat-cell *matCellDef="let product"> {{product.Item5}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="icon-column">
+            <mat-header-cell *matHeaderCellDef>
+            </mat-header-cell>
+           <mat-cell *matCellDef="let product" style="justify-content: flex-end;">
+                <button class="mat-tbl-icon" *ngIf="product.Pid == hoverindex" (click)=edit($event,product)  mat-icon-button>
+                    <span class="icon-Add"></span>
+                </button>
+                <button class="mat-tbl-icon" *ngIf="product.Pid == hoverindex" (click)=delete($event,product)  mat-icon-button>
+                    <span class="icon-dustbin"></span>
+                  </button>
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="columnList"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: columnList;"
+        class="element-grid-row"
+        (mouseover) = "rowMouseOver(row)"
+        [class.selected]="selection.isSelected(row)"
+        (click)="selection.toggle(row)">
+      </mat-row>
+      </mat-table>
+      <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20, 50]">
+      </mat-paginator>
+    </mat-card-content>
+  </mat-card>
+</div>
+

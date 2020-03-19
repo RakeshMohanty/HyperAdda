@@ -1,0 +1,30 @@
+{
+  "applicationServiceUrl": "http://localhost:56590/api/application",
+	"environmentName": "  http://localhost:56590/api/application - http://eu50apvd049/DEV/NGS/api/application",
+  "version": "version",
+  "i18n-fr": "http://localhost:8080",
+  "i18n-en": "http://localhost:8080",
+  "i18n-es": "http://localhost:8080",
+  "i18n-nl": "http://localhost:8080",
+  "logger-config" :
+      [
+          {
+            "loggerName": "console",
+            "loggerLocation" : "console",
+            "isActive" : true
+          },
+          {
+            "loggerName": "localstorage",
+            "loggerLocation" : "logging",
+            "isActive" : true
+          },
+          {
+            "loggerName": "webapi",
+            "loggerLocation" : "http://localhost:56590/api/application/log",
+            "isActive" : true
+          }
+        ]
+}
+
+
+

@@ -1,0 +1,51 @@
+@import "./src/styles/global/base/color";
+
+:host {
+  background-color: $base-color-white;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 15px 1px 15px 1px !important;
+  width: 350px !important;
+  border-radius: 3px 3px 3px 3px;
+  color: $grey-shade-dark;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+:host.border-p {
+  border: 1px solid $primary-color-dark;
+  border-left: 10px solid $primary-color-dark;
+}
+
+:host.border-w {
+  border: 1px solid $warning-color;
+  border-left: 10px solid $warning-color;
+}
+
+:host.border-s {
+  border: 1px solid $success-color;
+  border-left: 10px solid $success-color;
+}
+
+:host.border-a {
+  border: 1px solid $error-color;
+  border-left: 10px solid $error-color;
+}
+
+.toast-close-button {
+  color: #999 !important;
+  opacity: 1;
+  top: -0.1rem !important;
+}
+
+.toast-close-button:hover {
+  color: #02ceff !important;
+}
+
+.custom-title {
+  color: $grey-shade-dark;
+}
+.custom-message {
+  padding-left: 10px;
+}

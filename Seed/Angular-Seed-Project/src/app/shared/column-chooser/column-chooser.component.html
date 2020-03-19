@@ -1,0 +1,33 @@
+<button mat-icon-button  [matMenuTriggerFor]="menu" (click)="menuOpen($event)">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu" (click)="menuClick($event)"  (closed)="menuClosed()"
+[overlapTrigger]="false">
+<ng-template [ngTemplateOutlet]="tester"></ng-template>
+</mat-menu>
+<ng-template #tester>
+<div (click)="menuClick($event)" style="padding: 10px;">
+  <div style = "display: flex; flex-wrap: wrap; margin-bottom: 10px;min-width: 250px;min-height: 23px;">
+  <span *ngFor="let column of columns">
+    <span *ngIf="column.Visible" class="column-text-border">
+        {{column.Name}}<a [routerLink]="" (click)="removeText(column)"><i class="fa fa-times"></i></a>
+    </span>
+  </span>
+  </div>
+  <mat-divider></mat-divider>
+  <form>
+      <mat-form-field style="width: 100%;">
+        <input matInput name="search-text" [(ngModel)]="query" placeholder="Search">
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+  </form>
+  <mat-divider></mat-divider>
+  <mat-selection-list>
+      <mat-list-option [selected]="column.Visible" #cols (click)="columnClick(column,cols.selected)" checkboxPosition="before"
+        *ngFor="let column of columns | search:'Name':query">
+        <div>{{column.Name}}</div>
+      </mat-list-option>
+    </mat-selection-list>
+</div>
+</ng-template>
+

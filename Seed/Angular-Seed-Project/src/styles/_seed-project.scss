@@ -1,0 +1,27 @@
+@import "global/main";
+
+.custom-element {
+  color: $primary-color-dark;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-font{
+  font-size: 25px;
+  letter-spacing: 0.9px;
+  color: $primary-color-dark;
+}
+
+.header-label {
+  @extend .header-font;
+  font-family: $font-light;
+}
+
+.header-label-bold {
+  @extend .header-font;
+  font-family: $font-semi-bold;
+}
+
+
+
+

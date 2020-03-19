@@ -1,0 +1,140 @@
+<mat-accordion multi="true" class="example-headers-align">
+  <mat-expansion-panel [expanded]="!expand">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Form Elements ...
+      </mat-panel-title>
+      <mat-panel-description>
+       Date Picker
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Date Picker</h5>
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker2" [formControl]="date"  (dateInput)="inputEvent('input', $event)"
+          (dateChange)="addEvent('change', $event)"
+           placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker2">
+              <span style="font-size: 15px" class="icon-ChangeDate" matDatepickerToggleIcon></span>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+
+      </div>
+      <div class="col-md-6">
+        <h5>Disabled</h5>
+        <mat-form-field>
+          <input matInput [matDatepicker]="dp1"  placeholder="Completely disabled" disabled>
+          <mat-datepicker-toggle matSuffix [for]="dp1">
+              <span style="font-size: 15px" class="icon-ChangeDate" matDatepickerToggleIcon></span>
+          </mat-datepicker-toggle>
+          <mat-datepicker #dp1></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-8">
+        <h5>Moment FR Locale</h5>
+
+        <mat-form-field>
+          <input matInput [matDatepicker]="dpfr" [formControl]="date2" placeholder="Japanese (Japan) locale">
+          <mat-datepicker-toggle matSuffix [for]="dpfr">
+              <span class="icon-ChangeDate" matDatepickerToggleIcon></span>
+          </mat-datepicker-toggle>
+          <mat-datepicker #dpfr></mat-datepicker>
+        </mat-form-field>
+
+        <button mat-button (click)="french()">French</button>
+        <button mat-button (click)="japanese()">Japanese</button>
+        <button mat-button (click)="english()">English</button>
+        <span style="font-size: 45px" class="icon-ChangeDate"></span>
+      </div>
+    </div>
+
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="expand">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Notifications / Flash Msg
+      </mat-panel-title>
+      <mat-panel-description>
+        Flash Msg
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Flash Msg</h5>
+        <mat-form-field style="width: 100%">
+          <input matInput [formControl]="flashMessageInput" placeholder="Enter a Flash Message">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h5>Display Flash Message</h5>
+        <button style="margin: 40px" mat-raised-button color="primary" (click)="primary()">Primary</button>
+        <button style="margin: 40px" mat-raised-button color="primary" (click)="warning()">Warning</button>
+        <button style="margin: 40px" mat-raised-button color="primary" (click)="success()">Success</button>
+        <button style="margin: 40px" mat-raised-button color="primary" (click)="alert()">Alert</button>
+      </div>
+    </div>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="expand">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Popup
+      </mat-panel-title>
+      <mat-panel-description>
+        Popup Window
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Popup Message</h5>
+        <mat-form-field style="width: 100%">
+          <textarea rows="7" [formControl]="popupmessage" matInput placeholder="Enter popup message"></textarea>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h5>Display Popup</h5>
+        <button style="margin: 40px" mat-raised-button color="primary" (click)="showPopup()">Open Popup</button>
+      </div>
+    </div>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="expand">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Confirm Dialog
+        </mat-panel-title>
+        <mat-panel-description>
+          Confirm Dialog
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Confirm Message</h5>
+          <mat-form-field style="width: 100%">
+            <textarea rows="3" [formControl]="confirmmessage" matInput placeholder="Enter confirm message"></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h5>Display Popup</h5>
+          <button style="margin: 40px" mat-raised-button color="primary" (click)="displayConfirm()">Confirm Message</button>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+  </mat-accordion>

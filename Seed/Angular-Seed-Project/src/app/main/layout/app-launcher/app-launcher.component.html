@@ -1,0 +1,32 @@
+<div style="margin-top:70px;margin-left:10%;margin-right: 10%">
+  <mat-tab-group dynamicHeight  [selectedIndex]="selectedTabIndex" (selectedIndexChange)="selectedIndexChanged($event)">
+    <mat-tab *ngFor="let menu of navNodes" label="{{menu.TranslationLabel | translate}}">
+      <div style="margin-top:50px">
+      <div class="panel-left">
+        <div *ngFor="let submenu of navNodes[leftIndex].Children | slice: 0: sliceIndex">
+          <div class="launcher-option-inactive" (click)="launcherleftClick()">
+            <span class="launcher-icon {{submenu.Icon}}"></span>
+            <div class="launcher-text-inactive">{{ submenu.TranslationLabel | translate }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-middle">
+      <div *ngFor="let submenu of menu.Children">
+        <div class="launcher-option-active" (click)="launcherOptionClick(submenu, menu)">
+          <span class="launcher-icon {{submenu.Icon}}"></span>
+          <div class="launcher-text-active">{{ submenu.TranslationLabel | translate }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-right" *ngIf = "navNodes.length > 2">
+      <div *ngFor="let submenu of navNodes[rightIndex].Children | slice:0: sliceIndex">
+        <div class="launcher-option-inactive" (click)="launcherRightClick()">
+          <span class="launcher-icon {{submenu.Icon}}"></span>
+          <div class="launcher-text-inactive">{{ submenu.TranslationLabel | translate }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

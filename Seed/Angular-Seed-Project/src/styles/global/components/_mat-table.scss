@@ -1,0 +1,61 @@
+@import "./src/styles/global/base/color";
+
+.element-grid-row {
+  position: relative;
+}
+
+.element-grid-row:not(.selected) {
+  cursor: pointer;
+}
+
+.element-grid-row:not(.selected):hover {
+  background: #f5f5f5;
+}
+
+.element-grid-row.selected {
+  border-bottom-width: 1px;
+  border-bottom-color:   rgba($grey-shade-light, .15);
+  background-color:   rgba($grey-shade-light, .15);
+}
+
+.f-mat-table-header {
+  display: flex;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-style: solid;
+  border-bottom-color: rgba(0,0,0,0.12);
+  border-top-color: rgba(0,0,0,0.12);
+  padding: 10px
+}
+.f-right {margin-left: auto;}
+
+.mat-tbl-icon {
+  width: 20px;
+  margin-left:10px;
+  color:$primary-color-dark;;
+}
+
+.column-text-border {
+  border: 1px solid  $primary-color-dark;
+  border-radius: 3px 3px 3px 3px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+mat-row:nth-child(even){
+  background-color:none;
+  }
+
+mat-row:nth-child(odd){
+  background-color:rgba($grey-shade-light, .05);
+  }
+
+
+
+
+
+
+

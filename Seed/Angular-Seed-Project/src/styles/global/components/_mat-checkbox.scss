@@ -1,0 +1,34 @@
+
+.mat-checkbox-frame {
+  border-radius: 3px;
+  border: 2px solid $link-color;
+  height:16px;
+  width:16px;
+
+}
+
+
+
+
+
+.mat-checkbox-checkmark-path {
+  stroke: #fff !important;
+}
+
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: $link-color;
+  height: 16px;
+  width: 16px;
+}
+.mat-checkbox-inner-container
+{
+  height:16px !important;
+  width:16px !important;
+}
+
+mat-checkbox.label {
+margin-bottom:0px;
+}
+
+
+

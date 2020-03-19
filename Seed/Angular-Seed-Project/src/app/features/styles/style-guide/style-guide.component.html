@@ -1,0 +1,497 @@
+<mat-accordion multi="true" class="example-headers-align">
+  <mat-expansion-panel [expanded]="step === 0" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Colors
+          </mat-panel-title>
+          <mat-panel-description>
+            Colors used in the application
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+    <div class="row">
+        <div class="col-md-1">
+          <mat-card class="bg1">
+            <mat-card-content>
+              #576EAF
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg2">
+            <mat-card-content>
+              #959ECC
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg3">
+            <mat-card-content>
+              #F5822B
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg4">
+            <mat-card-content>
+              #F8A464
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg5">
+            <mat-card-content>
+              #33333
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg6">
+            <mat-card-content>
+              #666666
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg7">
+            <mat-card-content>
+              #999999
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg8">
+            <mat-card-content>
+              #bb3e53
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg9">
+            <mat-card-content>
+              #54a267
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg10">
+            <mat-card-content>
+              #ffcc01
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-1">
+          <mat-card class="bg11">
+            <mat-card-content>
+              #2793e6
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 1">
+      <mat-expansion-panel-header class="xy">
+        <mat-panel-title>
+          Typography
+        </mat-panel-title>
+        <mat-panel-description>
+          Font Family : Montserrat
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-card>
+            <mat-card-title class="font-light">Montserrat Light</mat-card-title>
+            <mat-card-content class="font-light">
+              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                <br/> abcdefghijklnopqrstuvwxyz
+                <br/> 1234567890!@#$%^&*()_+~
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-md-6">
+          <mat-card>
+            <mat-card-title class="font-regular">Montserrat Regular</mat-card-title>
+            <mat-card-content class="font-regular">
+              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                <br/> abcdefghijklnopqrstuvwxyz
+                <br/> 1234567890!@#$%^&*()_+~
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-card>
+            <mat-card-title class="font-medium">Montserrat Medium</mat-card-title>
+            <mat-card-content class="font-medium">
+              <p> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                <br/> abcdefghijklnopqrstuvwxyz
+                <br/> 1234567890!@#$%^&*()_+~
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-md-6">
+          <mat-card>
+            <mat-card-title class="font-semi-bold">Montserrat Semibold</mat-card-title>
+            <mat-card-content class="font-semi-bold">
+              <p> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                <br/> abcdefghijklnopqrstuvwxyz
+                <br/> 1234567890!@#$%^&*()_+~
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel [expanded]="step === 1">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Heading
+        </mat-panel-title>
+        <mat-panel-description>
+          Heading
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <h1> H1 - Montserrat Light, 48px, #333, line-height:50px</h1>
+      <h2>H2 - Montserrat Light, 32px, #333, line-height:50px</h2>
+      <h3>H3 - Montserrat Regular, 26px, #333, line-height:45px</h3>
+      <h4>H4 - Montserrat Medium, 20px, #333, line-height:40px</h4>
+      <h5>H5 - Montserrat Regular, 18px, #333, line-height:34px</h5>
+      <h6>H6 - Montserrat SemiBold, 16px, #333, line-height:30px </h6>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 1">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Body Text
+        </mat-panel-title>
+        <mat-panel-description>
+          Link / Hyperlink
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <h2>Body Text</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed urna sed neque blandit gravida vitae bibendum dictum,
+        nisl nisi.</p>
+      <h2>Link / Hyperlink</h2>
+      <p>Lorem ipsum dolor sit amet,
+        <a href="">click here</a> adipiscing elit. Duis sed urna sed neque blandit gravida vitae bibendum dictum, nisl nisi.</p>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 1">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Buttons
+        </mat-panel-title>
+        <mat-panel-description>
+          Buttons
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Primary Button</h5>
+          <button mat-raised-button color="primary">Normal</button>
+        </div>
+        <div class="col-md-3">
+          <h5>Primary Button Click</h5>
+          <button mat-raised-button color="primary">Click</button>
+        </div>
+        <div class="col-md-3">
+          <h5>Secondary Button</h5>
+          <button mat-button color="primary">Normal</button>
+        </div>
+        <div class="col-md-3">
+          <h5>Tertiary Button & Link</h5>
+          <button mat-button color="accent">Normal</button>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel [expanded]="step === 1">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Form Elements
+        </mat-panel-title>
+        <mat-panel-description>
+          Text field
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <h5>Text field</h5>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Normal</h5>
+          <mat-form-field appearance="standard">
+            <mat-label>Place Holder</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <h5>Focus</h5>
+          <mat-form-field appearance="standard">
+            <mat-label>Place Holder</mat-label>
+            <input matInput placeholder="Last Name">
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <h5>Focus</h5>
+          <mat-form-field>
+              <input matInput placeholder="Enter your email" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel [expanded]="step === 1">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Form Elements ...
+        </mat-panel-title>
+        <mat-panel-description>
+          Search
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <h5>Search</h5>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Normal</h5>
+          <mat-form-field>
+              <input matInput placeholder="Search">
+              <mat-icon matSuffix class="search-icon">search</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <h5>Focus</h5>
+          <mat-form-field>
+              <mat-label>Search</mat-label>
+              <input matInput placeholder="Last Name">
+              <mat-icon matSuffix class="search-icon">search</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <h5>Search Sugg</h5>
+          <form>
+              <mat-form-field>
+                <input type="text" placeholder="Place Holder" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                    {{option}}
+                  </mat-option>
+                </mat-autocomplete>
+                <mat-icon matSuffix class="search-icon">search</mat-icon>
+              </mat-form-field>
+            </form>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 1">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Form Elements ...
+          </mat-panel-title>
+          <mat-panel-description>
+            Catogory and Field Search
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <h5>Catogory and Field Search</h5>
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Normal</h5>
+            <mat-form-field>
+              <input type="text" placeholder="All" aria-label="Number" matInput [formControl]="searchAutoControl" [matAutocomplete]="auto1">
+              <mat-autocomplete #auto1="matAutocomplete">
+                <mat-option *ngFor="let option of numbers" [value]="option">
+                  {{option}}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <h5>Focus</h5>
+            <mat-form-field>
+                <mat-label>Search</mat-label>
+                <input matInput placeholder="Last Name">
+                <mat-icon matSuffix class="search-icon">search</mat-icon>
+            </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <h5>Search Sugg</h5>
+            <form class="example-form">
+                <mat-form-field>
+                  <input type="text" placeholder="Place Holder" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                  <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                      {{option}}
+                    </mat-option>
+                  </mat-autocomplete>
+                  <mat-icon matSuffix class="search-icon">search</mat-icon>
+                </mat-form-field>
+              </form>
+          </div>
+        </div>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 1">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Form Elements ...
+            </mat-panel-title>
+            <mat-panel-description>
+              Drop Down
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <h5>Drop Down</h5>
+          <div class="row">
+            <div class="col-md-4">
+              <h5>Normal</h5>
+              <mat-form-field>
+                <mat-select placeholder="Search">
+                  <mat-option *ngFor="let stepOption of steps" [value]="stepOption.value">
+                    {{stepOption.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <h5>Focus</h5>
+              <mat-form-field>
+                <mat-select placeholder="Search">
+                  <mat-option *ngFor="let stepOption of steps" [value]="stepOption.value">
+                    {{stepOption.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <h5>Drop Down</h5>
+              <mat-form-field>
+                <mat-select placeholder="Choose a test step" [formControl]="animalControl" required>
+                  <mat-option>--</mat-option>
+                  <mat-option *ngFor="let stepOption of steps" [value]="stepOption">
+                    {{stepOption.viewValue}}
+                  </mat-option>
+                </mat-select>
+                <mat-error *ngIf="animalControl.hasError('required')">Please choose a step</mat-error>
+                <mat-hint>{{animalControl.value?.value}}</mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+      </mat-expansion-panel>
+
+
+      <mat-expansion-panel [expanded]="step === 1">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Form Elements ...
+          </mat-panel-title>
+          <mat-panel-description>
+          Text Area
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <h5>Text Area</h5>
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Normal</h5>
+            <mat-form-field>
+              <textarea matInput placeholder="Leave a comment"></textarea>
+            </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <h5>Autosize textarea</h5>
+            <form>
+            <mat-form-field>
+              <mat-label>Autosize textarea</mat-label>
+              <textarea matInput
+                        cdkTextareaAutosize
+                        #autosize="cdkTextareaAutosize"
+                        cdkAutosizeMinRows="2"
+                        cdkAutosizeMaxRows="50"></textarea>
+            </mat-form-field>
+          </form>
+          </div>
+          <div class="col-md-4">
+            <h5></h5>
+          </div>
+        </div>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel [expanded]="step === 1">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Form Elements ...
+        </mat-panel-title>
+        <mat-panel-description>
+          Radio Button & Check Box
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <h5>Check Box</h5>
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Normal</h5>
+          <mat-checkbox [(ngModel)]="disabled">Default</mat-checkbox>
+        </div>
+        <div class="col-md-3">
+          <h5>Hover</h5>
+          <mat-checkbox [(ngModel)]="indeterminate">Selected</mat-checkbox>
+        </div>
+        <div class="col-md-3">
+          <h5>Selected</h5>
+          <mat-checkbox [(indeterminate)]="indeterminate">Indeterminate</mat-checkbox>
+        </div>
+        <div class="col-md-3">
+          <h5>Disabled</h5>
+          <mat-checkbox [disabled]="disabled">Disabled</mat-checkbox>
+        </div>
+      </div>
+
+      <h5>Radio Button</h5>
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Normal</h5>
+          <mat-radio-group [(ngModel)]="labelPosition">
+            <mat-radio-button  value="after">After</mat-radio-button>
+            <mat-radio-button  value="before">Before</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="col-md-3">
+          <h5>Hover</h5>
+          <mat-checkbox   [(ngModel)]="disabled">Disable</mat-checkbox>
+        </div>
+        <div class="col-md-3">
+          <h5>Disabled</h5>
+          <mat-radio-group [(ngModel)]="labelPosition">
+            <mat-radio-button value="after">After</mat-radio-button>
+            <mat-radio-button [disabled]="disabled"  value="middle">Disabled</mat-radio-button>
+            <mat-radio-button value="before">Before</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="col-md-3">
+          <h5>Disabled</h5>
+          <mat-checkbox   [labelPosition]="labelPosition">Check this one</mat-checkbox>
+         </div>
+      </div>
+  </mat-expansion-panel>
+  </mat-accordion>

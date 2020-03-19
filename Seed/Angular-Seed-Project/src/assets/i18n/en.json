@@ -1,0 +1,23 @@
+{
+  "Common": {
+    "Application": {
+      "Name": "Rakesh Solution - EN"
+    },
+    "Menu": {
+      "SideNav": {        
+        "Reporting": "Reporting",
+        "StyleGuide": "Style Guide",
+        "Components": "Components",
+        "Grid": "Grid",
+        "Grid-Col-Chooser":"Grid Column Chooser",
+        "Grid-Row-Details": "Grid Row Details",
+        "SliderForm": "Slider Form",
+        "Notifications": "Notifications",
+        "UIandUX": "UI/UX"
+      }
+    }
+  },
+  "Ngei": {
+
+  }
+}
